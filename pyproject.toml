@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "ja-qlora"
+version = "0.1.0"
+description = ""
+authors = ["Christian Millsop <20523235+cmillsop@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "ja-qlora"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+torch = ">=2"
+ipykernel = "^6.23.1"
+ipywidgets = "^8.0.6"
+bitsandbytes = "^0.39.0"
+transformers = { git = "ssh://git@github.com/huggingface/transformers.git" }
+peft = {git = "ssh://git@github.com/huggingface/peft.git"}
+accelerate = {git = "ssh://git@github.com/huggingface/accelerate.git"}
+datasets = "^2.12.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
